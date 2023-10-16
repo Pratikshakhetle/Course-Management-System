@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC  
+ "-//Hibernate/Hibernate Mapping DTD 5.3.1//EN"  
+ "http://hibernate.sourceforge.net/hibernate-mapping-5.3.1 dtd">
+  
+ <hibernate-mapping>
+ <class name="pack.Student" table="StudentInformation">
+ <id name="stud_id">
+ <generator class="assigned"/>
+ </id>
+ <property name="firstname" length="10"></property>
+ <property name="lastname" length="10"></property>
+ <property name="city" length="10"></property>
+ <property name="age" length="5"></property>
+ </class>
+ </hibernate-mapping>
